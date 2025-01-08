@@ -5,6 +5,34 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Our Team</title>
       <link rel="stylesheet" href="/src/style.css">
+      <style>
+        .team-section {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+          grid-gap: 20px;
+        }
+
+        .team-member {
+          background-color: #fff;
+          border: 1px solid #ddd;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+          text-align: center;
+        }
+
+        .team-member img {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+          object-fit: cover;
+          margin-bottom: 10px;
+        }
+
+        .team-member h3 {
+          margin-top: 0;
+        }
+      </style>
     </head>
     <body>
       <header class="main-header">
@@ -21,13 +49,34 @@
             <li><a href="/pricing.html">Pricing</a></li>
             <li><a href="/qa.html">Q&A</a></li>
             <li><a href="/contact.html">Contact</a></li>
-             <li><a href="/chat.html"><span class="chat-icon">💬</span>Chat</a></li>
+            <li><a href="/chat.html"><span class="chat-icon">💬</span>Chat</a></li>
           </ul>
         </nav>
       </header>
       <main>
         <h1>Our Team</h1>
-        <p>This is the our team page.</p>
+        <div class="team-section">
+          <div class="team-member">
+            <img src="https://via.placeholder.com/150" alt="Team Member 1">
+            <h3>John Doe</h3>
+            <p>CEO</p>
+          </div>
+          <div class="team-member">
+            <img src="https://via.placeholder.com/150" alt="Team Member 2">
+            <h3>Jane Doe</h3>
+            <p>CTO</p>
+          </div>
+          <div class="team-member">
+            <img src="https://via.placeholder.com/150" alt="Team Member 3">
+            <h3>Peter Jones</h3>
+            <p>Marketing Manager</p>
+          </div>
+          <div class="team-member">
+            <img src="https://via.placeholder.com/150" alt="Team Member 4">
+            <h3>Sarah Williams</h3>
+            <p>Sales Manager</p>
+          </div>
+        </div>
       </main>
     </body>
     </html>

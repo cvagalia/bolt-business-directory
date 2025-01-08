@@ -5,6 +5,41 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Pricing</title>
       <link rel="stylesheet" href="/src/style.css">
+      <style>
+        .pricing-table {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          grid-gap: 20px;
+        }
+
+        .pricing-plan {
+          background-color: #fff;
+          border: 1px solid #ddd;
+          padding: 20px;
+          border-radius: 8px;
+          box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+          text-align: center;
+        }
+
+        .pricing-plan h2 {
+          margin-top: 0;
+        }
+
+        .pricing-plan .price {
+          font-size: 2em;
+          font-weight: bold;
+          color: #000;
+        }
+
+        .pricing-plan ul {
+          list-style: none;
+          padding: 0;
+        }
+
+        .pricing-plan li {
+          margin-bottom: 10px;
+        }
+      </style>
     </head>
     <body>
       <header class="main-header">
@@ -21,13 +56,44 @@
             <li><a href="/pricing.html">Pricing</a></li>
             <li><a href="/qa.html">Q&A</a></li>
             <li><a href="/contact.html">Contact</a></li>
-             <li><a href="/chat.html"><span class="chat-icon">💬</span>Chat</a></li>
+            <li><a href="/chat.html"><span class="chat-icon">💬</span>Chat</a></li>
           </ul>
         </nav>
       </header>
       <main>
         <h1>Pricing</h1>
-        <p>This is the pricing page.</p>
+        <div class="pricing-table">
+          <div class="pricing-plan">
+            <h2>Basic</h2>
+            <p class="price">K100/year</p>
+            <ul>
+              <li>Basic listing</li>
+              <li>Limited features</li>
+              <li>No logo</li>
+            </ul>
+            <button>Sign Up</button>
+          </div>
+          <div class="pricing-plan">
+            <h2>Standard</h2>
+            <p class="price">K250/year</p>
+            <ul>
+              <li>Enhanced listing</li>
+              <li>More features</li>
+              <li>Logo included</li>
+            </ul>
+            <button>Sign Up</button>
+          </div>
+          <div class="pricing-plan">
+            <h2>Premium</h2>
+            <p class="price">K500/year</p>
+            <ul>
+              <li>Premium listing</li>
+              <li>All features</li>
+              <li>Featured placement</li>
+            </ul>
+            <button>Sign Up</button>
+          </div>
+        </div>
       </main>
     </body>
     </html>

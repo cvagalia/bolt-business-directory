@@ -5,6 +5,23 @@
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Q&A</title>
       <link rel="stylesheet" href="/src/style.css">
+      <style>
+        .qa-section {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .qa-item {
+          margin-bottom: 20px;
+          border-bottom: 1px solid #ddd;
+          padding-bottom: 10px;
+        }
+
+        .qa-question {
+          font-weight: bold;
+          margin-bottom: 5px;
+        }
+      </style>
     </head>
     <body>
       <header class="main-header">
@@ -21,13 +38,26 @@
             <li><a href="/pricing.html">Pricing</a></li>
             <li><a href="/qa.html">Q&A</a></li>
             <li><a href="/contact.html">Contact</a></li>
-             <li><a href="/chat.html"><span class="chat-icon">💬</span>Chat</a></li>
+            <li><a href="/chat.html"><span class="chat-icon">💬</span>Chat</a></li>
           </ul>
         </nav>
       </header>
       <main>
         <h1>Q&A</h1>
-        <p>This is the Q&A page.</p>
+        <div class="qa-section">
+          <div class="qa-item">
+            <h3 class="qa-question">How do I add my business to the directory?</h3>
+            <p>To add your business, click the "Add Business" button on the homepage.  You'll need to fill out a simple form with your business information.</p>
+          </div>
+          <div class="qa-item">
+            <h3 class="qa-question">How much does it cost to list my business?</h3>
+            <p>Pricing varies depending on the plan you choose.  See our <a href="/pricing.html">pricing page</a> for details.</p>
+          </div>
+          <div class="qa-item">
+            <h3 class="qa-question">What if I need help or have questions?</h3>
+            <p>You can contact us through the "Contact Us" page, or use the chat feature on the website.</p>
+          </div>
+          </div>
       </main>
     </body>
     </html>

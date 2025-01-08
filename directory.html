@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>PNG Business Directory</title>
+      <link rel="stylesheet" href="/src/style.css">
+      <style>
+        /* Styles for the directory page */
+        .business-list {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+          grid-gap: 20px;
+          padding: 20px;
+        }
+
+        .business-item {
+          background-color: #fff;
+          padding: 15px;
+          border-radius: 8px;
+          box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .business-item h3 {
+          margin-top: 0;
+        }
+      </style>
+    </head>
+    <body>
+      <header class="main-header">
+        <div class="header-content">
+          <h1>Papua New Guinea Business Directory</h1>
+        </div>
+      </header>
+      <header class="secondary-header">
+        <nav>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/directory.html">Directory</a></li>
+            <li><a href="/about.html">About</a></li>
+            <li><a href="/team.html">Our Team</a></li>
+            <li><a href="/pricing.html">Pricing</a></li>
+            <li><a href="/qa.html">Q&A</a></li>
+            <li><a href="/contact.html">Contact</a></li>
+            <li><a href="/chat.html"><span class="chat-icon">💬</span>Chat</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1>Papua New Guinea Business Directory</h1>
+        <div class="business-list" id="business-list">
+          </div>
+      </main>
+      <script type="module" src="/src/directory.js"></script>
+    </body>
+    </html>
